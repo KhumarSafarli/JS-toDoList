@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+   <input type="checkbox" class="toggle" id="darkmode-toggle"/>
+   <label for="darkmode-toggle"></label>
+   <div class="background"></div>
+    <div id="preloader" class="preloader"></div>
+    <header>
+      <h1>todos</h1>
+    </header>
+    <div class="input-box">
+      <form>
+        <img src="./assets/icon/down.svg" />
+        <input
+          type="text"
+          class="noteTitle"
+          name="noteTitle"
+          placeholder="What needs to be done?"
+          required
+        />
+      </form>
+      <div class="container" id="container">
+        <!-- <div class="text-box">
+            <button type="submit" class="check-button"></button>
+            <p></p>
+            <img src="./assets/icon/delete.svg" />
+          </div>
+          <div class="text-box">
+            <button type="submit"></button>
+            <p></p>
+            <img src="./assets/icon/delete.svg" />
+          </div> -->
+      </div>
+    
+
+      <div class="box-footer">
+        <div class="items">
+            <p id="itemsLeft"> items left</p>
+        </div>
+       <div class="selectors" id="selectors">
+        <p id="all">All</p>
+        <p id="active">Active</p>
+        <p id="completed">Completed</p>
+       </div>
+       <div class="delete-btn">
+        <button id="delete">Clear completed</button>
+       </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
